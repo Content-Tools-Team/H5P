@@ -82,19 +82,11 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     'default': {
          'ENGINE': 'django.db.backends.mysql',
-<<<<<<< 6f6e8e4716bb60c2e279ea56cf96e5feb5539241
          'NAME': config('DB_NAME'),
          'USER': config('DB_USER'),
          'PASSWORD': config('DB_PASSWORD'),
          'HOST': config('DB_HOST'),
          'PORT': config('DB_PORT'),
-=======
-         'NAME': 'django',
-         'USER': 'root',
-         'PASSWORD': 'root',
-         'HOST': 'localhost',
-         'PORT': '3306',
->>>>>>> changed db configurations for docker
     },
 }
 
@@ -128,11 +120,5 @@ H5P_URL = '/h5p/'
 H5P_SAVE = 30
 H5P_EXPORT = '/exports/'
 H5P_LANGUAGE = 'en'
-<<<<<<< 6f6e8e4716bb60c2e279ea56cf96e5feb5539241
 BASE_URL = config('H5P_ROOT')# Hostname of your server
 COLLAB_ROOT = config('COLLAB_ROOT')
-=======
-BASE_URL = 'http://localhost:8000' # Hostname of your server
-
-COLLAB_ROOT = 'http://localhost:7000/'
->>>>>>> changed db configurations for docker
